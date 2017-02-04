@@ -12,7 +12,7 @@ class IdeasController < ApplicationController
   # GET /ideas/1.json
   def show
     @comments = @idea.comments.all
-    @comment = @idea.comments.build(user: current_user)
+    @comment = @idea.comments.build
   end
 
   # GET /ideas/new
